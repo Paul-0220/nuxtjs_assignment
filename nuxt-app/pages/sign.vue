@@ -22,4 +22,12 @@ margin-left: auto;
 margin-right: auto;
 border:1px solid skyblue
 }
+#signUp button {
+    width: 320px;
+    height: 40px;
+    border: 1px solid skyblue;
+    color: #fff;
+    background-color: skyblue;
+    cursor: pointer;
+}
 </style>
