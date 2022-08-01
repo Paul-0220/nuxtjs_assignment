@@ -1,8 +1,16 @@
 {
-    "user":[{
-        "name":"Prashannjeet",
-        "email":"paul@gmail.com",
-        "password":"abc123"
+  "user": [
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 1
+    },
+    {
+      "name": "paul",
+      "email": "paul@gmail.com",
+      "password": "ytvu ",
+      "id": 2
     }
-    ]
+  ]
 }

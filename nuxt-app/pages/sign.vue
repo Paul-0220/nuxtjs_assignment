@@ -4,14 +4,37 @@
         <h2>SignUp</h2>
     </legend>
     <form id="signUp">
-        <input type="text" id="userName" name="userName" placeholder="User Name"><br><br>
-                <input type="email" id="email" name="email" placeholder="Email"><br><br>
-                        <input type="password" id="password" name="password" placeholder="password"><br><br>
-                        <button>Sign Up</button>
+        <input type="text" id="userName" v-model="name" name="userName" placeholder="User Name"><br><br>
+                <input type="email" id="email" v-model="email" name="email" placeholder="Email"><br><br>
+                        <input type="password" id="password" v-model="password" name="password" placeholder="password"><br><br>
+                        <button @click="sign">Sign Up</button>
     </form>
 </fieldset>
 </template>
-<script></script>
+<script>
+ import axios from 'axios'
+ import indexVue from "./index.vue";
+ export default {
+    name:"sign",
+    data(){
+         return {
+            name:'',
+            email:'',
+            password:'',
+        }
+     },
+    methods:{
+         async sign(){
+             console.log('signUp',this.name,this.email,this.password)
+             let result=await axios.post('http://localhost:3000/user',{
+                 name:this.name,
+                 email:this.email,
+                 password:this.password
+             })
+         }
+     }
+ }
+</script>
 <style>
 #signUp input{
 width: 300px;
