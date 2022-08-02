@@ -1,9 +1,9 @@
 {
   "users": [
     {
-      "name": "mamit",
-      "email": "a@gmail.com",
-      "password": "sdnkfgn",
+      "name": "shobha",
+      "email": "s@gmail.com",
+      "password": "shobha123",
       "id": 1
     },
     {
@@ -92,6 +92,12 @@
       "email": "amit @gmail.com",
       "password": "asdguksdfgu",
       "id": 35
+    },
+    {
+      "name":"shobha",
+      "email":"shobha@gmail.com",
+      "password":"shobha08",
+      "id":36
     }
   ]
 }
